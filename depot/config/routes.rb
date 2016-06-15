@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'admin' => 'admin#index'
+
+  controller :sessions do
+    get 'login' => 'sessions#new'
+    post 'login' => 'sessions#create'
+    delete 'logout' => 'sessions#destroy'
+  end
+
   resources :users
   resources :orders
   resources :line_items

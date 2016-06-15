@@ -17,3 +17,14 @@ you should add Ruby to your toolbox.
 image_url: 'http://www.musegain.com/widgets/lazy_images/assets/photo7-400x400.jpg',
 price: 49.95)
 # . . .
+Product.create(title: 'Programming CoffeScript',
+description:
+%{<p>
+CoffeScript is the fastest growing and most exciting dynamic language
+out there. If you need to get working programs delivered fast,
+you should add Ruby to your toolbox.
+</p>},
+image_url: 'http://img6a.flixcart.com/image/book/6/0/4/little-book-on-coffeescript-the-400x400-imaduepfvytazk2s.jpeg',
+price: 50)
+# . . .
+User.create(name: 'thoi', password: '123456')
